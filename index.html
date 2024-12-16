@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Soft - m&m</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <link rel="icon" type="image/vnd.icon" href="images/favicon.png">
+		<link rel="stylesheet" href="css/style.css" />
+
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZXJBVDf7R4JqmSpopVPoduIGWx1IwpBM"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+
+
+	</head>
+	<body>
+	<div class="svg-wrap">
+      <svg width="64" height="64" viewBox="0 0 64 64">
+        <path id="arrow-left" d="M26.667 10.667q1.104 0 1.885 0.781t0.781 1.885q0 1.125-0.792 1.896l-14.104 14.104h41.563q1.104 0 1.885 0.781t0.781 1.885-0.781 1.885-1.885 0.781h-41.563l14.104 14.104q0.792 0.771 0.792 1.896 0 1.104-0.781 1.885t-1.885 0.781q-1.125 0-1.896-0.771l-18.667-18.667q-0.771-0.813-0.771-1.896t0.771-1.896l18.667-18.667q0.792-0.771 1.896-0.771z"></path>
+      </svg>
+
+      <svg width="64" height="64" viewBox="0 0 64 64">
+        <path id="arrow-right" d="M37.333 10.667q1.125 0 1.896 0.771l18.667 18.667q0.771 0.771 0.771 1.896t-0.771 1.896l-18.667 18.667q-0.771 0.771-1.896 0.771-1.146 0-1.906-0.76t-0.76-1.906q0-1.125 0.771-1.896l14.125-14.104h-41.563q-1.104 0-1.885-0.781t-0.781-1.885 0.781-1.885 1.885-0.781h41.563l-14.125-14.104q-0.771-0.771-0.771-1.896 0-1.146 0.76-1.906t1.906-0.76z"></path>
+      </svg>
+    </div>
+
+
+    <!-- MAIN CONTENT -->
+
+   <div class="container-fluid">
+
+    <!-- HEADER -->
+
+    <section id="header">
+
+      <!-- NAVIGATION -->
+      <nav class="navbar navbar-fixed-top navbar-default bottom">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#header">Soft M&M</a>
+          </div><!-- /.navbar-header -->
+
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#header">Inicio</a></li>
+              <li><a href="#about">Nosotros</a></li>              
+			      <li><a href="#team">Team</a></li>
+              <li><a href="#contact">Contacto</a></li>
+            </ul>
+          </div> <!-- /.navbar-collapse -->
+        </div> <!-- /.container -->
+      </nav>
+
+      <!-- SLIDER -->
+      <div class="header-slide">
+        <section>
+          <div id="loader" class="pageload-overlay" data-opening="M 0,0 0,60 80,60 80,0 z M 80,0 40,30 0,60 40,30 z">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60" preserveAspectRatio="none">
+              <path d="M 0,0 0,60 80,60 80,0 Z M 80,0 80,60 0,60 0,0 Z"/>
+            </svg>
+          </div> <!-- /.pageload-overlay -->
+          
+          <div class="image-slide bg-fixed">
+            <div class="overlay">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+
+                    <div class="slider-content">
+                      <h1></h1>
+                      <p>En Soft M&M creamos páginas web simples y efectivas para negocios que desean destacar en el mundo digital.</p>
+                    </div>
+
+                  </div> <!-- /.col-md-12 -->
+                </div> <!-- /.row -->
+              </div> <!-- /.container -->
+            </div> <!-- /.overlay -->
+          </div> <!-- /.image-slide -->
+
+          <nav class="nav-slide">
+            <a class="prev" href="#prev">
+              <span class="icon-wrap">
+                <svg class="icon" width="32" height="32" viewBox="0 0 64 64">
+                  <use xlink:href="#arrow-left">
+                </svg>
+              </span>
+              <div>
+                <span>Prev Photo</span>
+                <h3>...</h3>
+                <p>...</p>
+                <img alt="Previous thumb">
+              </div>
+            </a>
+            <a class="next" href="#next">
+              <span class="icon-wrap">
+                <svg class="icon" width="32" height="32" viewBox="0 0 64 64">
+                  <use xlink:href="#arrow-right">
+                </svg>
+              </span>
+              <div>
+                <span>Next Photo</span>
+                <h3>...</h3>
+                <p>...</p>
+                <img alt="Next thumb">
+              </div>
+            </a>
+          </nav>
+        </section>
+
+        <script type="text/javascript">
+        var dataHeader = [
+                            {
+                              bigImage :"images/slide-1.jpg",
+                              title : "Soft M&M",
+							                author : "Templatestock"
+                            },
+                            {
+                              bigImage :"images/slide-2.jpg",
+                              title : "Soft M&M",
+                              author : "Templatestock"
+                            }
+                           
+                        ],
+            loaderSVG = new SVGLoader(document.getElementById('loader'), {speedIn : 400, speedOut : 400, easingIn : mina.easeinout});
+            loaderSVG.show()
+        </script>
+
+      </div><!-- /.header-slide -->
+    </section>
+
+    <!-- HEADER END -->
+
+
+    <!-- ABOUT -->
+
+    <section id="about" class="light">
+      <header class="title">
+        <h2>Acerca de <span>Nosotros</span></h2>
+       <p>En Soft M&M ayudamos a nuestros clientes a destacar en el mundo digital con páginas web personalizadas, modernas y funcionales. Creemos en hacer las cosas simples, efectivas y accesibles para todos.</p>
+      </header>
+
+      <div class="container">
+        <div class="row table-row">
+          <div class="col-sm-6 hidden-xs">
+            <div class="section-content">
+              <div class="big-image" style="background-image:url(images/1.png)"></div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="section-content">
+              <div class="about-content left animated" data-animate="fadeInLeft">
+                <div class="about-icon"><i class="fa fa-code"></i></div>
+                <div class="about-detail">
+                  <h4>Clean Code</h4>
+                  <p>Desarrollamos código limpio y optimizado para garantizar un rendimiento rápido y confiable en cada proyecto, cumpliendo con los más altos estándares de calidad.</p>
+                </div>
+              </div>
+
+              <div class="about-content left animated" data-animate="fadeInLeft">
+                <div class="about-icon"><i class="fa fa-desktop"></i></div>
+                <div class="about-detail">
+                  <h4>Fully Responsive</h4>
+                  <p>Nuestras páginas web están diseñadas para adaptarse a cualquier dispositivo, asegurando una experiencia de usuario perfecta desde smartphones hasta computadoras.</p>
+                </div>
+              </div>
+
+              <div class="about-content left animated" data-animate="fadeInLeft">
+                <div class="about-icon"><i class="fa fa-cube"></i></div>
+                <div class="about-detail">
+                  <h4>Diseño Multifuncional</h4>
+                  <p>Ofrecemos diseños versátiles que se ajustan a las necesidades de cada negocio, desde restaurantes hasta tiendas, destacando la identidad única de cada cliente.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /.row table-row -->
+      </div> <!-- /.container -->
+    </section>
+
+
+    <!-- TEAM -->
+
+    <section id="team" class="light">
+      <header class="title">
+        <h2>Nos adaptamos <span>a ti y tu negocio</span></h2>
+        <p>Ofrecemos presupuestos personalizados y precios accesibles. Creamos páginas web que se ajustan a tus necesidades y a tu bolsillo, haciendo que llevar tu negocio al mundo digital sea sencillo y económico.</p>
+      </header>
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 text-center">
+            <div class="wrap animated" data-animate="fadeInDown">
+              <div class="img-team">
+                <img src="images/rest.webp" alt="" class="img-circle">
+              </div>
+
+              <h3>Restaurantes</h3>
+              <h5>Menús en línea</h5>
+
+              <p>Crea una presencia digital atractiva para tu restaurante, con menús interactivos y sistemas de reservación fáciles de usar.</p>
+                             
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 text-center">
+            <div class="wrap animated" data-animate="fadeInDown"> 
+              <div class="img-team">
+                <img src="images/cafe.jpg" alt="" class="img-circle">
+              </div>
+
+              <h3>Cafeterías</h3>
+              <h5>Comparte tus sabores únicos</h5>
+
+              <p>Destaca tus especialidades y horarios, conectando con tus clientes de manera efectiva y moderna.</p>
+              <div class="team-social">
+                <ul class="list-inline social-list">
+                  
+                </ul> 
+              </div>          
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 text-center">
+            <div class="wrap animated" data-animate="fadeInDown"> 
+              <div class="img-team">
+                <img src="images/gym1.png" alt="" class="img-circle">
+              </div>
+
+              <h3>Gimnasios y Centros de Fitness</h3>
+              <h5>Planes de membresía y horarios de clases</h5>
+
+              <p>Ofrecemos una página web que facilita la gestión de tus planes de membresía, horarios de clases y más.</p>
+
+                        
+            </div>
+          </div>
+         
+          <div class="col-md-3 col-sm-6 text-center">
+            <div class="wrap animated" data-animate="fadeInDown"> 
+              <div class="img-team">
+                <img src="images/joven.avif" alt="" class="img-circle">
+              </div>
+
+              <h3>Nos adaptamos a tu negocio</h3>
+              <h5>Desarrollamos la página web que necesitas</h5>
+              
+              <p>Creemos en soluciones personalizadas, creando páginas web que se ajustan a las necesidades únicas de tu negocio, para ayudarte a crecer en línea.</p>              
+              <div class="team-social">
+                <ul class="list-inline social-list">
+                  
+                </ul> 
+              </div>                
+            </div>
+          </div>
+        </div>
+      </div> <!-- /.container -->
+    </section>
+	
+
+ 
+
+    <!-- FOOTER CONTACT -->
+
+     <section id="contact" class="dark">
+      <header class="title">
+        <h2>Contáctanos <span></span></h2>
+        <p>¿Listo para llevar tu negocio al siguiente nivel? Escríbenos y recibe un presupuesto sin compromiso. ¡Hagamos realidad tu página web hoy mismo!</p>
+      </header>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 animated" data-animate="fadeInLeft">
+            <form action="#">
+              <div class="row">
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="Tu nombre">
+                </div>
+                <div class="col-md-6">
+                  <input type="email" class="form-control" placeholder="Tu Email">
+                </div>
+                <div class="col-md-12">
+                  <textarea class="form-control" rows="3" placeholder="Escribe aquí tu mensaje:"></textarea>
+                </div>
+                <div class="col-md-12">
+                  <button class="btn btn-default submit">Enviar mensaje</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-md-4 animated" data-animate="fadeInRight">
+            <address>
+                <span><i class="fa fa-map-marker fa-lg"></i>CDMX</span>
+                <span><i class="fa fa-phone fa-lg"></i> 56 - 2497 6189</span>
+                <span><i class="fa fa-envelope-o fa-lg"></i> <a href="mailto:contact@example.com">angelmello0@gmail.com</a></span>
+            </address>
+          </div>
+		  
+        </div>
+      </div>
+    </section>
+
+    <section id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>Made BY <a href="http://templatestock.co">Template Stock</a></p>           
+          </div>
+        </div>
+      </div>
+    </section>
+
+   </div><!-- /.container-fluid -->
+    
+    <!-- SCRIPT -->
+    <script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
